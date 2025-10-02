@@ -14,5 +14,8 @@ elif age >= 18 and age < 50:
 elif age >= 50:
     print("Du är gammal")
 
+elif age != 72:
+    print("Ahhhh")
+
 else:
     print("Jag vet inte")

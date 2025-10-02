@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deklarationshjälpen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Deklarationshjälpen</h1>
+      <nav>
+        <a href="#om">Om</a>
+        <a href="#berakning">Beräkna Skatt</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="om">
+      <h2>Vad är deklaration?</h2>
+      <p>
+        Varje år behöver privatpersoner i Sverige deklarera sina inkomster till Skatteverket. Här får du hjälp att förstå processen och räkna ut din skatt.
+      </p>
+    </section>
+
+    <section id="berakning">
+      <h2>Skatteberäkning</h2>
+      <form id="taxForm">
+        <label for="income">Ange din årsinkomst (kr):</label>
+        <input type="number" id="income" required />
+        <button type="submit">Beräkna</button>
+      </form>
+      <div id="result"></div>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakta oss</h2>
+      <form id="contactForm">
+        <label for="name">Namn:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Meddelande:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Skicka</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Deklarationshjälpen AB – All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
